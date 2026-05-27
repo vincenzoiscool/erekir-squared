@@ -14,6 +14,7 @@ type: HeaterGenerator
 warmupRate: 0.03
 lightColor: b2e9ff
 lightRadius: 120
+hasPower: false
 category: power
 generateEffect: none
 powerProduction: 0
