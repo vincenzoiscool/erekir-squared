@@ -36,8 +36,18 @@ suffix: "-coil-heat"
 color: ff3838
 }
 {
-type: DrawLiquidRegion
+type: DrawLiquidTile
 drawLiquid: thorium-fuel
+}
+{
+type: DrawParticles
+alpha: 0.5
+particleRad: 9
+particleSize: 3
+reverse: true
+particleLife: 200
+particles: 10
+color: d744ff
 }
 DrawDefault
 DrawHeatInput
