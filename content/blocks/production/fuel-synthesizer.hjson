@@ -1,0 +1,56 @@
+requirements: [
+carbide/80
+silicon/140
+oxide/60
+surge-alloy/10
+]
+name: "Fuel Synthesizer"
+description: '''
+Produces gaseous thorium fuel from thorium and arkycite. Requires heat.
+'''
+category: crafting
+hasLiquids: true
+craftEffect: none
+outputLiquid: thorium-fuel/0.2
+craftTime: 20
+itemCapacity: 35
+liquidCapacity: 100
+heatRequirement: 30
+maxEfficiency: 1
+ambientSound: loopExtract
+ambientSoundVolume: 0.08
+size: 3
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawRegion
+suffix: "-coils"
+}
+{
+type: DrawHeatRegion
+suffix: "-coil-heat"
+color: ff3838
+}
+{
+type: DrawLiquidRegion
+drawLiquid: thorium-fuel
+}
+DrawDefault
+DrawHeatInput
+]
+consumes: {
+power: 4
+items: {
+items: [
+thorium/1
+]
+}
+liquid: {
+liquid: arkycite
+amount: 2
+}
+}
+research: carbide-crucible
