@@ -35,10 +35,10 @@ suffix: "-bottom"
 {
 type: DrawSoftParticles
 alpha: 0.22
-particleRad: 12
-particleSize: 11
+particleRad: 13
+particleSize: 15
 particleLife: 180
-particles: 40
+particles: 60
 color: ff4900
 color2: ffd669
 }
