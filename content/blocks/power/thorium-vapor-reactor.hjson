@@ -11,7 +11,7 @@ description: '''
 Generates extreme heat from nuclear fission. Does not melt down, but will explode violently if destroyed. Takes a long time to warm up and does not produce power.
 '''
 type: HeaterGenerator
-warmupRate: 0.02
+warmupRate: 0.03
 lightColor: b2e9ff
 lightRadius: 120
 category: power
