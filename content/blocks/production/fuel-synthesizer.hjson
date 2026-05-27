@@ -8,6 +8,7 @@ name: "Fuel Synthesizer"
 description: '''
 Produces gaseous thorium fuel from thorium and arkycite. Requires heat.
 '''
+type: HeatCrafter
 category: crafting
 hasLiquids: true
 craftEffect: none
