@@ -11,15 +11,15 @@ description: '''
 Generates extreme heat from nuclear fission. Does not melt down, but will explode violently if destroyed. Takes a long time to warm up and does not produce power.
 '''
 type: HeaterGenerator
-warmupRate: 0.03
+warmupRate: 0.05
 lightColor: b2e9ff
 lightRadius: 120
 hasPower: false
 category: power
 generateEffect: none
 powerProduction: 0
-ambientSound: flux
-ambientSoundVolume: 0.2
+ambientSound: loopThoriumReactor
+ambientSoundVolume: 0.11
 generateEffect: none
 heatOutput: 120
 explosionRadius: 15
@@ -34,13 +34,13 @@ suffix: "-bottom"
 }
 {
 type: DrawSoftParticles
-alpha: 0.22
-particleRad: 13
-particleSize: 15
+alpha: 0.3
+particleRad: 15
+particleSize: 20
 particleLife: 180
 particles: 60
-color: ff4900
-color2: ffd669
+color: ff684d
+color2: ffffc5
 }
 {
 type: DrawRegion
