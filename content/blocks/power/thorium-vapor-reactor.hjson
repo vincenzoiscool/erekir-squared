@@ -1,0 +1,66 @@
+requirements: [
+carbide/500
+tungsten/750
+oxide/200
+silicon/400
+phase-fabric/250
+surge-alloy/200
+]
+name: "Thorium Vapor Reactor"
+description: '''
+Generates extreme heat from nuclear fission. Does not melt down, but will explode violently if destroyed. Takes a long time to warm up and does not produce power.
+'''
+type: HeaterGenerator
+warmupRate: 0.02
+lightColor: b2e9ff
+lightRadius: 120
+category: power
+generateEffect: none
+powerProduction: 0
+ambientSound: flux
+ambientSoundVolume: 0.2
+generateEffect: none
+heatOutput: 120
+explosionRadius: 15
+explosionDamage: 2000
+explodeEffect: reactorExplosion
+explodeSound: explosionReactor
+size: 5
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawSoftParticles
+alpha: 0.22
+particleRad: 12
+particleSize: 11
+particleLife: 180
+particles: 40
+color: ff4900
+color2: ffd669
+}
+{
+type: DrawRegion
+suffix: "-mid"
+}
+{
+type: DrawLiquidTile
+drawLiquid: thorium-fuel
+padding: 17
+}
+DrawDefault
+DrawHeatOutput
+]
+consumes: {
+liquids: {
+liquids: [
+thorium-fuel/0.3
+]
+}
+}
+liquidCapacity: 80
+research: {
+parent: neoplasia-reactor
+}
