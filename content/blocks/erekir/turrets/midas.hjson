@@ -43,8 +43,7 @@ tungsten: {
   shootEffect: {
     type: WrapEffect
     color: 768a9a
-    effect: shootBigColor
-    rotWithParent: true
+    effect: hitBulletColor
   }
 }
 silicon: {
@@ -66,8 +65,7 @@ silicon: {
   shootEffect: {
     type: WrapEffect
     color: 999ba0
-    effect: shootBigColor
-    rotWithParent: true
+    effect: hitBulletColor
   }
   fragBullets: 2
   fragBullet: {
