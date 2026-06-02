@@ -1,0 +1,92 @@
+requirements: [
+beryllium/120
+tungsten/70
+silicon/170
+]
+name: "Midas"
+description: '''
+Accelerates shards of metal to extremely high speed using magnetic fields. Requires power. Different ammo inflicts differing effects.
+'''
+category: turret
+smokeEffect: none
+shootSound: shootNavanax
+reload: 50
+shootY: -3
+rotateSpeed: 1.7
+range: 240
+shootCone: 1
+scaledHealth: 170
+recoil: 1
+shake: 2
+researchCostMultiplier: 0.1
+ammoPerShot: 2
+coolantMultiplier: 1.5
+ammoTypes: {
+tungsten: {
+  type: RailBulletType
+  length: 240
+  damage: 50
+  hitColor: 768a9a
+  hitEffect: hitBulletColor
+  endEffect: hitBulletColor
+  pierceCap: 2
+  pierceDamageFactor: 0.8
+  shootEffect: {
+    type: WrapEffect
+    color: 768a9a
+    effect: shootBigColor
+  }
+}
+silicon: {
+  type: RailBulletType
+  length: 240
+  damage: 35
+  hitColor: 999ba0
+  hitEffect: hitBulletColor
+  endEffect: hitBulletColor
+  pierceCap: 2
+  pierceDamageFactor: 0.8
+  shootEffect: {
+    type: WrapEffect
+    color: 999ba0
+    effect: shootBigColor
+  }
+  fragBullets: 2
+  fragBullet: {
+    type: BasicBulletType
+    backColor: 707594
+    frontColor: 999ba0
+    speed: 3
+    lifetime: 20
+    homingRange: 60
+    damage: 10
+    width: 8
+    height: 8
+    shrinkY: 0
+    trailColor: 707594
+    trailLength: 12
+    trailWidth: 4
+  }
+}
+}
+drawer: {
+type: DrawTurret
+basePrefix: "reinforced-"
+parts: [
+{
+suffix: "-barrel"
+mirror: true
+layerOffset: -0.001
+progress: recoil
+moveX: 0.5
+moveY: -1
+moveRot: -3
+}
+]
+}
+size: 3
+liquidCapacity: 20
+research: breach
+consumes: {
+liquid: water/0.25
+}
