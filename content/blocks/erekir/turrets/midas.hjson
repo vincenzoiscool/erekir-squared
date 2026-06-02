@@ -3,6 +3,7 @@ beryllium/120
 tungsten/70
 silicon/170
 ]
+type: ItemTurret
 name: "Midas"
 description: '''
 Accelerates shards of metal to extremely high speed using magnetic fields. Requires power. Different ammo inflicts differing effects.
@@ -89,4 +90,5 @@ liquidCapacity: 20
 research: breach
 consumes: {
 liquid: water/0.25
+power: 4.5
 }
