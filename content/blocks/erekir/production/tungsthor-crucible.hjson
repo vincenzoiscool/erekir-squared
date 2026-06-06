@@ -1,0 +1,71 @@
+requirements: [
+thorium/100
+silicon/140
+oxide/130
+surge-alloy/30
+]
+name: "Tungsthor Crucible"
+description: '''
+Melts thorium and tungsten into tungsthor. Requires nitrogen to protect and harden the alloy during melting and casting.
+'''
+type: HeatCrafter
+category: crafting
+hasLiquids: true
+craftEffect: none
+outputItem: tungsthor/1
+craftTime: 30
+itemCapacity: 35
+liquidCapacity: 100
+heatRequirement: 30
+maxEfficiency: 1
+ambientSound: loopExtract
+ambientSoundVolume: 0.08
+size: 3
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidRegion
+drawLiquid: nitrogen
+}
+{
+type: DrawParticles
+alpha: 0.4
+particleRad: 10
+particleSize: 5
+reverse: true
+particleLife: 200
+particles: 15
+color: f9a3c7
+}
+DrawDefault
+DrawHeatInput
+{
+type: DrawHeatRegion
+suffix: "-vents"
+color: ff3838
+}
+{
+type: DrawGlowRegion
+alpha: 0.5
+glowScale: 25
+glowIntensity: 1
+color: ff3838
+}
+]
+consumes: {
+power: 6
+items: {
+items: [
+thorium/2
+tungsten/1
+]
+}
+liquid: {
+liquid: nitrogen
+amount: 0.5
+}
+}
+research: carbide-crucible
