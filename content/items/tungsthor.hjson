@@ -1,0 +1,14 @@
+color: ab68b3
+radioactivity: 0.1
+research: {
+  parent: thorium
+  objectives: [
+    {
+      type: Produce
+      content: erekir-squared-tungsthor
+    }
+  ]
+}
+shownPlanets: [
+  erekir
+]
