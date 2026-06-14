@@ -1,4 +1,8 @@
 gas: true
+name: "Thorium Fuel"
+description: '''
+Enriched thorium in a gaseous form.
+'''
 color: ab68b3
 flammability: 0
 explosiveness: 1.4
