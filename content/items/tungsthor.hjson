@@ -1,5 +1,9 @@
 color: ab68b3
 radioactivity: 0.1
+name: "Tungsthor"
+description: '''
+Dense, strong, and heat-resistant. Used for nuclear shielding and heavy construction.
+'''
 research: {
   parent: thorium
   objectives: [
