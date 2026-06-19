@@ -1,0 +1,20 @@
+color: ab68b3
+radioactivity: 0.1
+name: "Dehydrated Arkycite"
+description: '''
+Arkycite that has been dehydrated. Can be rehydrated with water.
+'''
+details: '''The bacterium is not destroyed by dehydration and can reactivate in water.
+This ability may have originally helped in surviving the vacuum of space.'''
+research: {
+  parent: arkycite
+  objectives: [
+    {
+      type: Produce
+      content: erekir-squared-dryarkycite
+    }
+  ]
+}
+shownPlanets: [
+  erekir
+]
