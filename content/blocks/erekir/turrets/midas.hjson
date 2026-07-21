@@ -13,6 +13,7 @@ smokeEffect: none
 shootSound: shootNavanax
 reload: 50
 shootY: -3
+ammoPerShot: 3
 rotateSpeed: 1.7
 range: 240
 shootCone: 1
@@ -104,6 +105,10 @@ size: 3
 liquidCapacity: 20
 research: breach
 consumes: {
-liquid: water/0.25
 power: 4.5
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: water
+  amount: 0.25
 }
