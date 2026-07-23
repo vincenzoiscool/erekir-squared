@@ -1,0 +1,441 @@
+requirements: [
+
+]
+type: LaserTurret
+name: "Sigil"
+description: '''
+Fires an extremely powerful continuous laser that turns the air around it to plasma. Burns through an insane amount of power and consumes arkycite as coolant. Extremely effective against armored units.
+'''
+shootY: 0
+reload: 400
+recoilTime: 30
+shoot: {
+firstShotDelay: 180
+}
+shootSound: shootSigil
+chargeSound: chargeSigil
+soundPitchMin: 1
+soundPitchMax: 1
+firingMoveFract: 0.5
+shootDuration: 120
+category: turret
+rotateSpeed: 1
+range: 350
+shootCone: 7
+researchCostMultiplier: 0.1
+shootType: {
+chargeEffect: [
+{
+lifetime: 180
+type: WaveEffect
+sizeFrom: 100
+sizeTo: 9
+strokeFrom: 0
+strokeTo: 3
+colorFrom: ffd37f
+colorTo: ffffff
+}
+{
+lifetime: 90
+startDelay: 90
+type: ParticleEffect
+sizeFrom: 0
+sizeTo: 9
+particles: 1
+length: 0
+colorFrom: ffd37f
+colorTo: ffffff
+}
+{
+lifetime: 180
+type: ParticleEffect
+sizeFrom: 0
+sizeTo: 6
+particles: 10
+length: 85
+baseLength: -85
+colorFrom: ffd37f
+colorTo: ffffff
+}
+{
+lifetime: 90
+startDelay: 90
+type: ParticleEffect
+line: true
+lenFrom: 0
+lenTo: 10
+strokeFrom: 0
+strokeTo: 3
+particles: 10
+length: 120
+baseLength: -120
+colorFrom: ffd37f
+colorTo: ffffff
+}
+]
+smokeEffect: none
+shootEffect: [
+{
+lifetime: 20
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 100
+strokeFrom: 30
+strokeTo: 0
+colorFrom: ffffff
+colorTo: ffd37f
+}
+{
+lifetime: 120
+type: ParticleEffect
+sizeFrom: 9
+sizeTo: 0
+particles: 35
+length: 100
+colorFrom: ffffff
+colorTo: ffd37f
+}
+{
+lifetime: 45
+type: ParticleEffect
+line: true
+lenFrom: 20
+lenTo: 0
+strokeFrom: 7
+strokeTo: 0
+particles: 15
+length: 150
+colorFrom: ffffff
+colorTo: ffd37f
+}
+]
+type: ContinuousLaserBulletType
+status: melting
+statusDuration: 480
+armorMultiplier: 2
+damage: 250
+timescaleDamage: true
+buildingDamageMultiplier: 0.5
+length: 350
+drawSize: 420
+ammoMultiplier: 1
+hitColor: ffd37f
+hitEffect: hitMeltdown
+width: 5
+colors: [ffd37f, ffffff]
+bulletInterval: 5
+intervalRandomSpread: 0
+// INTERVAL BULLET FOR FX AND SPAWN BULLETS
+intervalBullet: {
+type: EmptyBulletType
+hideStats: false
+damage: 0
+instantDisappear: true
+despawnEffect: [
+{
+type: ParticleEffect
+lifetime: 50
+particles: 7
+sizeFrom: 9
+sizeTo: 3
+sizeInterp: pow2In
+colorFrom: ffffff
+colorTo: ffd37f00
+length: 300
+cone: 10
+}
+{
+type: ParticleEffect
+lifetime: 30
+particles: 5
+sizeFrom: 5
+sizeTo: 2
+sizeInterp: pow2In
+colorFrom: ffffff
+colorTo: ffd37f00
+length: 200
+cone: 30
+}
+{
+type: ParticleEffect
+lifetime: 10
+particles: 8
+line: true
+lenFrom: 12
+lenTo: 0
+strokeFrom: 3
+strokeTo: 0
+sizeInterp: pow2In
+colorFrom: ffffff
+colorTo: ffd37f
+length: 200
+cone: 40
+}
+]
+spawnBulletRandomSpread: 35
+spawnBullets: [
+{
+type: BasicBulletType
+sprite: circle-bullet
+backColor: ffd37f
+lightColor: ffd37f
+frontColor: ffffff
+shrinkY: 0
+lifetime: 40
+speed: 8.75
+homing: true
+homingRange: 150
+homingPower: 0.06
+damage: 60
+status: burning
+statusDuration: 90
+trailLength: 20
+width: 6
+height: 6
+trailWidth: 3
+trailColor: ffd37f
+trailEffect: none
+despawnEffect: none
+hitEffect: {
+type: ParticleEffect
+colorFrom: ffffff
+colorTo: ffd37f
+lenFrom: 6
+lenTo: 3
+strokeFrom: 2
+strokeTo: 0
+line: true
+length: 30
+particles: 6
+}
+}
+]
+}
+}
+drawer: {
+type: DrawTurret
+basePrefix: "reinforced-"
+parts: [
+// penta things
+{
+type: HaloPart
+color: ffd37f
+progress: recoil
+tri: true
+radius: 3
+triLength: 0
+haloRadius: 12
+haloRadiusTo: 25
+triLengthTo: 16
+shapes: 5
+shapeRotation: 0
+haloRotation: 0
+layer: 110
+}
+{
+type: HaloPart
+color: ffd37f
+progress: recoil
+tri: true
+radius: 3
+triLength: 0
+haloRadius: 12
+haloRadiusTo: 25
+triLengthTo: 8
+shapes: 5
+shapeRotation: 180
+haloRotation: 0
+layer: 110
+}
+// side things
+{
+type: HaloPart
+color: ffd37f
+progress: recoil
+tri: true
+radius: 4
+triLength: 0
+haloRadius: 0
+haloRadiusTo: 15
+triLengthTo: 45
+shapes: 2
+shapeRotation: 0
+haloRotation: 90
+layer: 110
+}
+{
+type: HaloPart
+color: ffd37f
+progress: recoil
+tri: true
+radius: 4
+triLength: 0
+haloRadius: 0
+haloRadiusTo: 15
+triLengthTo: 15
+shapes: 2
+shapeRotation: 180
+haloRotation: 90
+layer: 110
+}
+// back thing
+{
+type: HaloPart
+color: ffd37f
+progress: recoil
+tri: true
+radius: 6
+triLength: 0
+haloRadius: 0
+haloRadiusTo: 30
+triLengthTo: 40
+shapes: 1
+shapeRotation: 0
+haloRotation: 180
+layer: 110
+}
+{
+type: HaloPart
+color: ffd37f
+progress: recoil
+tri: true
+radius: 6
+triLength: 0
+haloRadius: 0
+haloRadiusTo: 30
+triLengthTo: 15
+shapes: 1
+shapeRotation: 180
+haloRotation: 180
+layer: 110
+}
+// actual turret
+{
+outlineLayerOffset: -0.003
+type: Regionpart
+suffix: "-main"
+}
+{
+outlineLayerOffset: -0.003
+layerOffset: -0.001
+type: Regionpart
+suffix: "-barrel"
+moves: [
+{
+x: 4.5
+progress: recoil
+}
+]
+progress: {
+type: charge
+ops: [
+{
+op: delay
+amount: 0.35
+}
+]
+}
+moveX: 4.5
+mirror: true
+}
+{
+outlineLayerOffset: -0.004
+layerOffset: 0.001
+type: Regionpart
+suffix: "-plate"
+progress: charge
+moveY: -14.25
+moves: [
+{
+y: -14.25
+progress: recoil
+}
+]
+}
+// bars
+{
+layerOffset: -0.002
+type: Regionpart
+suffix: "-bar"
+outline: false
+color: ffd37f
+heatColor: ffd37f
+heatProgress: charge
+moves: [
+{
+y: 12
+progress: recoil
+}
+]
+progress: {
+type: charge
+ops: [
+{
+op: delay
+amount: 0.4
+}
+]
+}
+moveY: 12
+}
+{
+layerOffset: -0.002
+type: Regionpart
+suffix: "-bar"
+outline: false
+color: ffd37f
+heatColor: ffd37f
+heatProgress: charge
+moves: [
+{
+y: 18
+progress: recoil
+}
+]
+progress: {
+type: charge
+ops: [
+{
+op: delay
+amount: 0.5
+}
+]
+}
+moveY: 18
+}
+{
+layerOffset: -0.002
+type: Regionpart
+suffix: "-bar"
+outline: false
+color: ffd37f
+heatColor: ffd37f
+heatProgress: charge
+moves: [
+{
+y: 24
+progress: recoil
+}
+]
+progress: {
+type: charge
+ops: [
+{
+op: delay
+amount: 0.6
+}
+]
+}
+moveY: 24
+}
+]
+}
+size: 7
+shake: 8
+recoil: 0
+consumes: {
+power: 600
+liquids: [
+arkycite/10
+]
+}
