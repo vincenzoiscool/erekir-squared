@@ -23,7 +23,7 @@ shake: 2
 coolantMultiplier: 15
 researchCostMultiplier: 0.1
 ammoPerShot: 2
-coolantMultiplier: 1.5
+coolantMultiplier: 15
 ammoTypes: {
 tungsten: {
   type: BasicBulletType
@@ -73,7 +73,7 @@ silicon: {
   fragBullet: {
     type: BasicBulletType
     homingRange: 120
-    homing: true
+    homingPower: 0.08
     backColor: 707594
     frontColor: 999ba0
     speed: 3
