@@ -20,6 +20,7 @@ shootCone: 1
 scaledHealth: 170
 recoil: 1
 shake: 2
+coolantMultiplier: 15
 researchCostMultiplier: 0.1
 ammoPerShot: 2
 coolantMultiplier: 1.5
@@ -39,7 +40,8 @@ tungsten: {
   frontColor: ffffff
   trailLength: 30
   trailWidth: 1
-  pierceCap: 2
+  pierceCap: 3
+  pierceArmor: true
   pierceDamageFactor: 0.8
   shootEffect: {
     type: WrapEffect
@@ -49,7 +51,6 @@ tungsten: {
 }
 silicon: {
   type: BasicBulletType
-  homingRange: 120
   width: 8
   height: 10
   speed: 8
@@ -71,6 +72,8 @@ silicon: {
   fragBullets: 2
   fragBullet: {
     type: BasicBulletType
+    homingRange: 120
+    homing: true
     backColor: 707594
     frontColor: 999ba0
     speed: 3
