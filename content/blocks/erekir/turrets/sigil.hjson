@@ -4,7 +4,7 @@ requirements: [
 type: LaserTurret
 name: "Sigil"
 description: '''
-Fires an extremely powerful continuous laser that turns the air around it to plasma. Burns through an insane amount of power and consumes arkycite as coolant. Extremely effective against armored units.
+Charges up and fires a continuous beam of metal plasma. Requires an extreme amount of power, slag, and thorium fuel to maintain a high thermal output.
 '''
 shootY: 0
 reload: 400
@@ -434,8 +434,9 @@ size: 7
 shake: 8
 recoil: 0
 consumes: {
-power: 600
+power: 350
 liquids: [
-arkycite/10
+thorium-fuel/3
+slag/4.5
 ]
 }
