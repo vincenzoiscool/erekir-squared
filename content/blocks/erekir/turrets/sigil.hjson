@@ -1,5 +1,10 @@
 requirements: [
-
+tungsthor/600
+silicon/850
+phase-fabric/300
+surge-alloy/200
+tungsten/800
+beryllium/1200
 ]
 type: LaserTurret
 name: "Sigil"
