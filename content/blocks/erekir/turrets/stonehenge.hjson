@@ -19,7 +19,7 @@ soundPitchMax: 0.7
 category: turret
 rotateSpeed: 0.5
 range: 2400
-shootCone: 0
+shootCone: 0.25
 researchCostMultiplier: 0.1
 ammoTypes: {
 tungsten: {
