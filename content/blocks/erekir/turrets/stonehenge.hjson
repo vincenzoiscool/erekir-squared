@@ -23,7 +23,7 @@ shootCone: 0.25
 researchCostMultiplier: 0.1
 ammoTypes: {
 tungsten: {
-type: RailBullletType
+type: RailBulletType
 smokeEffect: {
 type: WrapEffect
 effect: shootSmokeTitan
