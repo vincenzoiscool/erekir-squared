@@ -71,7 +71,7 @@ sizeFrom: 1
 sizeTo: 1.5
 lifetime: 45
 colorFrom: ffffff
-colorTo: 868bdc
+colorTo: 868bdc00
 }
 ]
 pointEffectSpacing: 240
