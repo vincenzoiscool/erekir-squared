@@ -67,8 +67,8 @@ region: "erekir-squared-railshock"
 particles: 1
 length: 1
 cone: 0
-sizeFrom: 1
-sizeTo: 1.5
+sizeFrom: 8
+sizeTo: 12
 lifetime: 45
 colorFrom: ffffff
 colorTo: 868bdc00
