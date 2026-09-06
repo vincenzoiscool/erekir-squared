@@ -63,7 +63,7 @@ colorTo: 868bdc
 }
 {
 type: ParticleEffect
-region: "railshock"
+region: "erekir-squared-railshock"
 particles: 1
 length: 1
 cone: 0
