@@ -53,8 +53,8 @@ line: true
 particles: 1
 length: 1
 cone: 0
-lenFrom: 240
-lenTo: 240
+lenFrom: 720
+lenTo: 720
 strokeFrom: 10
 strokeTo: 0
 lifetime: 45
@@ -74,7 +74,7 @@ colorFrom: ffffff
 colorTo: 868bdc00
 }
 ]
-pointEffectSpacing: 240
+pointEffectSpacing: 720
 length: 2400
 pierce: true
 shieldDamageMultiplier: 4
