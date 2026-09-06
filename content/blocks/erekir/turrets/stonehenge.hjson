@@ -1,0 +1,106 @@
+requirements: [
+tungsthor/600
+silicon/850
+phase-fabric/300
+surge-alloy/200
+tungsten/800
+beryllium/1200
+]
+type: ItemTurret
+name: "Stonehenge"
+description: '''
+Uses electromagnetic rails to fire a hypersonic tungsten rod at aerial targets. Has practically unlimited range, but takes a long time to charge up. Breaks shields and prioritizes strongest enemies.
+'''
+reload: 400
+recoilTime: 250
+shootSound: railgun2
+soundPitchMin: 0.65
+soundPitchMax: 0.7
+category: turret
+rotateSpeed: 0.5
+range: 2400
+shootCone: 0
+researchCostMultiplier: 0.1
+ammoTypes: {
+tungsten: {
+smokeEffect: {
+type: WrapEffect
+effect: shootSmokeTitan
+color: 868bdc
+}
+shootEffect: [
+{
+lifetime: 20
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 100
+strokeFrom: 30
+strokeTo: 0
+colorFrom: ffffff
+colorTo: 868bdc
+}
+{
+lifetime: 30
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 120
+delay: 15
+strokeFrom: 20
+strokeTo: 0
+colorFrom: ffffff
+colorTo: 868bdc
+}
+{
+lifetime: 40
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 150
+delay: 30
+strokeFrom: 10
+strokeTo: 0
+colorFrom: ffffff
+colorTo: 868bdc
+}
+{
+type: WrapEffect
+effect: scatheSlash
+color: ffa447
+}
+{
+lifetime: 30
+type: ParticleEffect
+sizeFrom: 9
+sizeTo: 0
+particles: 25
+length: 100
+colorFrom: ffa447
+ffa447: ff0000
+}
+]
+type: RailBullletType
+length: 2400
+pierce: true
+shieldDamageMultiplier: 4
+armorMultiplier: 2
+damage: 6500
+buildingDamageMultiplier: 0
+ammoMultiplier: 1
+hitColor: ffa447
+hitEffect: scatheSlash
+}
+}
+drawer: {
+type: DrawTurret
+basePrefix: "reinforced-"
+parts: [
+]
+}
+size: 7
+shake: 12
+recoil: 6
+consumes: {
+power: 250
+liquids: [
+water/10
+]
+}
