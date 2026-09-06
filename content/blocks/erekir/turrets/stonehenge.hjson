@@ -53,8 +53,8 @@ line: true
 particles: 1
 length: 1
 cone: 0
-lenFrom: 100
-lenTo: 100
+lenFrom: 240
+lenTo: 240
 strokeFrom: 10
 strokeTo: 0
 lifetime: 45
@@ -62,17 +62,19 @@ colorFrom: ffffff
 colorTo: 868bdc
 }
 {
-lifetime: 30
-type: WaveEffect
-sizeFrom: 0
-sizeTo: 80
-strokeFrom: 15
-strokeTo: 0
+type: ParticleEffect
+region: "railshock"
+particles: 1
+length: 1
+cone: 0
+sizeFrom: 1
+sizeTo: 1.5
+lifetime: 45
 colorFrom: ffffff
 colorTo: 868bdc
 }
 ]
-pointEffectSpacing: 100
+pointEffectSpacing: 240
 length: 2400
 pierce: true
 shieldDamageMultiplier: 4
