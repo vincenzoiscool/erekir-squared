@@ -32,7 +32,7 @@ smokeEffect: [
 type: ParticleEffect
 particles: 10
 length: 120
-lifetime: 150
+lifetime: 90
 sizeFrom: 20
 sizeTo: 5
 sizeInterp: pow2In
@@ -43,7 +43,7 @@ colorTo: 1d214400
 type: ParticleEffect
 particles: 5
 length: 150
-lifetime: 100
+lifetime: 60
 sizeFrom: 12
 sizeTo: 5
 sizeInterp: pow2In
@@ -60,7 +60,7 @@ length: 1
 cone: 0
 sizeFrom: 24
 sizeTo: 90
-lifetime: 60
+lifetime: 15
 colorFrom: ffffff
 colorTo: 868bdc00
 }
@@ -104,7 +104,7 @@ lenFrom: 120
 lenTo: 120
 strokeFrom: 20
 strokeTo: 0
-lifetime: 60
+lifetime: 45
 colorFrom: ffffff
 colorTo: 868bdc
 }
@@ -116,7 +116,7 @@ length: 1
 cone: 0
 sizeFrom: 24
 sizeTo: 40
-lifetime: 60
+lifetime: 20
 colorFrom: ffffff
 colorTo: 868bdc00
 }
@@ -133,6 +133,115 @@ ammoMultiplier: 1
 hitColor: 868bdc
 hitEffect: none
 }
+surge-alloy: {
+type: RailBulletType
+collidesGround: false
+smokeEffect: [
+{
+type: ParticleEffect
+particles: 10
+length: 120
+lifetime: 90
+sizeFrom: 20
+sizeTo: 5
+sizeInterp: pow2In
+color: ffdb3a
+colorTo: 66311100
+}
+{
+type: ParticleEffect
+particles: 5
+length: 150
+lifetime: 60
+sizeFrom: 12
+sizeTo: 5
+sizeInterp: pow2In
+color: ffdb3a
+colorTo: 66311100
+}
+]
+shootEffect: [
+{
+type: ParticleEffect
+region: "erekir-squared-railshock"
+particles: 1
+length: 1
+cone: 0
+sizeFrom: 24
+sizeTo: 90
+lifetime: 15
+colorFrom: ffffff
+colorTo: ffdb3a00
+}
+{
+type: ParticleEffect
+particles: 15
+line: true
+cone: 35
+length: 240
+lifetime: 15
+lenFrom: 25
+lenTo: 6
+strokeFrom: 10
+strokeTo: 0
+color: ffffff
+colorTo: ffdb3a
+}
+{
+type: ParticleEffect
+particles: 15
+line: true
+cone: 45
+length: 120
+lifetime: 30
+lenFrom: 18
+lenTo: 3
+strokeFrom: 7
+strokeTo: 0
+color: ffffff
+colorTo: ffdb3a
+}
+]
+pointEffect: [
+{
+type: ParticleEffect
+line: true
+particles: 1
+length: 1
+cone: 0
+lenFrom: 120
+lenTo: 120
+strokeFrom: 20
+strokeTo: 0
+lifetime: 45
+colorFrom: ffffff
+colorTo: ffdb3a
+}
+{
+type: ParticleEffect
+region: "erekir-squared-railshock"
+particles: 1
+length: 1
+cone: 0
+sizeFrom: 24
+sizeTo: 40
+lifetime: 20
+colorFrom: ffffff
+colorTo: ffdb3a00
+}
+]
+hitSize: 20
+pointEffectSpace: 120
+length: 4800
+pierce: true
+shieldDamageMultiplier: 4
+pierceArmor: true
+damage: 8750
+buildingDamageMultiplier: 0
+ammoMultiplier: 1
+hitColor: ffdb3a
+hitEffect: none
+}
 }
 drawer: {
 type: DrawTurret
@@ -140,6 +249,8 @@ basePrefix: "reinforced-"
 parts: [
 ]
 }
+ammoPerShot: 25
+itemCapacity: 100
 size: 7
 shake: 50
 recoil: 6
