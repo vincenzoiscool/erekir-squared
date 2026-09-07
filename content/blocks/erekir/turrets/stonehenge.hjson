@@ -212,7 +212,7 @@ cone: 0
 lenFrom: 90
 lenTo: 90
 strokeFrom: 64
-strokeTo: 0
+strokeTo: 90
 lifetime: 20
 colorFrom: ffdb3a
 colorTo: 66311100
