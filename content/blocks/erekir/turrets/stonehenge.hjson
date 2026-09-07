@@ -9,7 +9,7 @@ beryllium/1200
 type: ItemTurret
 name: "Stonehenge"
 description: '''
-Uses electromagnetic rails to fire a hypersonic tungsten rod at aerial targets. Has practically unlimited range, but takes a long time to charge up. Breaks shields and prioritizes strongest enemies.
+Uses electromagnetic rails to fire a hypersonic metal rod at aerial targets. Has practically unlimited range, but takes a long time to charge up. Breaks shields and prioritizes strongest enemies.
 '''
 reload: 400
 recoilTime: 250
@@ -209,11 +209,11 @@ line: true
 particles: 1
 length: 1
 cone: 0
-lenFrom: 120
-lenTo: 120
+lenFrom: 90
+lenTo: 90
 strokeFrom: 64
 strokeTo: 0
-lifetime: 15
+lifetime: 20
 colorFrom: ffdb3a
 colorTo: 66311100
 }
@@ -223,8 +223,8 @@ line: true
 particles: 1
 length: 1
 cone: 0
-lenFrom: 120
-lenTo: 120
+lenFrom: 90
+lenTo: 90
 strokeFrom: 40
 strokeTo: 0
 lifetime: 45
@@ -235,13 +235,13 @@ colorTo: ffdb3a
 type: ParticleEffect
 line: true
 particles: 1
-length: 120
+length: 90
 cone: 0
-lenFrom: 120
+lenFrom: 90
 lenTo: 0
 strokeFrom: 12
 strokeTo: 0
-lifetime: 90
+lifetime: 60
 colorFrom: ffffff00
 colorTo: ffffff
 }
@@ -257,22 +257,9 @@ lifetime: 20
 colorFrom: ffdb3a
 colorTo: 66311100
 }
-{
-type: ParticleEffect
-region: "erekir-squared-railshock"
-particles: 1
-length: 1
-cone: 0
-sizeFrom: 50
-sizeTo: 80
-lifetime: 40
-delay: 40
-colorFrom: 663111
-colorTo: 66311100
-}
 ]
 hitSize: 24
-pointEffectSpace: 120
+pointEffectSpace: 90
 length: 4800
 pierce: true
 shieldDamageMultiplier: 4
