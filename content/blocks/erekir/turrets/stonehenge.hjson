@@ -170,8 +170,8 @@ cone: 0
 sizeFrom: 24
 sizeTo: 90
 lifetime: 15
-colorFrom: ffffff
-colorTo: ffdb3a00
+colorFrom: ffdb3a
+colorTo: 66311100
 }
 {
 type: ParticleEffect
@@ -211,7 +211,7 @@ length: 1
 cone: 0
 lenFrom: 120
 lenTo: 120
-strokeFrom: 20
+strokeFrom: 24
 strokeTo: 0
 lifetime: 45
 colorFrom: ffffff
@@ -226,22 +226,11 @@ cone: 0
 sizeFrom: 24
 sizeTo: 40
 lifetime: 20
-colorFrom: ffffff
-colorTo: ffdb3a00
+colorFrom: ffdb3a
+colorTo: 66311100
 }
 ]
-intervalBullet: {
-type: LightningBulletType
-lightningColor: ffdb3a
-lightningLength: 50
-lightningDamage: 500
-hitEffect: none
-}
-intervalRandomSpread: 0
-intervalSpread: 180
-intervalBullets: 2
-bulletInterval: 30
-hitSize: 20
+hitSize: 24
 pointEffectSpace: 120
 length: 4800
 pierce: true
