@@ -211,7 +211,7 @@ length: 1
 cone: 0
 lenFrom: 120
 lenTo: 120
-strokeFrom: 50
+strokeFrom: 64
 strokeTo: 0
 lifetime: 15
 colorFrom: ffdb3a
@@ -225,7 +225,7 @@ length: 1
 cone: 0
 lenFrom: 120
 lenTo: 120
-strokeFrom: 24
+strokeFrom: 40
 strokeTo: 0
 lifetime: 45
 colorFrom: ffffff
@@ -241,7 +241,7 @@ lenFrom: 120
 lenTo: 50
 strokeFrom: 12
 strokeTo: 0
-lifetime: 60
+lifetime: 90
 colorFrom: ffffff
 colorTo: ffffff
 }
