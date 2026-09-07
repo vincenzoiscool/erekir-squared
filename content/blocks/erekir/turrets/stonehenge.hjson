@@ -14,6 +14,8 @@ Uses electromagnetic rails to fire a hypersonic tungsten rod at aerial targets. 
 reload: 400
 recoilTime: 250
 shootSound: railgun2
+targetGround: false
+targetBlocks: false
 soundPitchMin: 0.65
 soundPitchMax: 0.7
 category: turret
@@ -24,11 +26,31 @@ researchCostMultiplier: 0.1
 ammoTypes: {
 tungsten: {
 type: RailBulletType
-smokeEffect: {
-type: WrapEffect
-effect: shootSmokeTitan
+collidesGround: false
+smokeEffect: [
+{
+type: ParticleEffect
+particles: 25
+length: 120
+lifetime: 200
+sizeFrom: 30
+sizeTo: 10
+sizeInterp: pow2In
 color: 868bdc
+colorTo: 66666600
 }
+{
+type: ParticleEffect
+particles: 15
+length: 150
+lifetime: 150
+sizeFrom: 20
+sizeTo: 7
+sizeInterp: pow2In
+color: 868bdc
+colorTo: 66666600
+}
+]
 shootEffect: [
 {
 type: ParticleEffect
@@ -42,6 +64,34 @@ lifetime: 60
 colorFrom: ffffff
 colorTo: 868bdc00
 }
+{
+type: ParticleEffect
+particles: 15
+line: true
+cone: 35
+length: 240
+lifetime: 15
+lenFrom: 25
+lenTo: 6
+strokeFrom: 10
+strokeTo: 0
+color: ffffff
+colorTo: 868bdc
+}
+{
+type: ParticleEffect
+particles: 15
+line: true
+cone: 45
+length: 120
+lifetime: 30
+lenFrom: 18
+lenTo: 3
+strokeFrom: 7
+strokeTo: 0
+color: ffffff
+colorTo: 868bdc
+}
 ]
 pointEffect: [
 {
@@ -52,7 +102,7 @@ length: 1
 cone: 0
 lenFrom: 120
 lenTo: 120
-strokeFrom: 10
+strokeFrom: 16
 strokeTo: 0
 lifetime: 45
 colorFrom: ffffff
@@ -71,16 +121,17 @@ colorFrom: ffffff
 colorTo: 868bdc00
 }
 ]
+hitSize: 16
 pointEffectSpace: 120
 length: 2400
 pierce: true
 shieldDamageMultiplier: 4
-armorMultiplier: 2
+pierceArmor: true
 damage: 6500
 buildingDamageMultiplier: 0
 ammoMultiplier: 1
 hitColor: 868bdc
-hitEffect: scatheSlash
+hitEffect: none
 }
 }
 drawer: {
