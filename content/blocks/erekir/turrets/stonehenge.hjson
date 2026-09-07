@@ -230,6 +230,17 @@ colorFrom: ffffff
 colorTo: ffdb3a00
 }
 ]
+intervalBullet: {
+type: LightningBulletType
+lightningColor: ffdb3a
+lightningLength: 50
+lightningDamage: 500
+hitEffect: none
+}
+intervalRandomSpread: 0
+intervalSpread: 180
+intervalBullets: 2
+bulletInterval: 30
 hitSize: 20
 pointEffectSpace: 120
 length: 4800
