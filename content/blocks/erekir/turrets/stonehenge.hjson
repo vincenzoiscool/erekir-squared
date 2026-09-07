@@ -209,8 +209,8 @@ line: true
 particles: 1
 length: 1
 cone: 0
-lenFrom: 90
-lenTo: 90
+lenFrom: 120
+lenTo: 120
 strokeFrom: 64
 strokeTo: 90
 lifetime: 20
@@ -223,8 +223,8 @@ line: true
 particles: 1
 length: 1
 cone: 0
-lenFrom: 90
-lenTo: 90
+lenFrom: 120
+lenTo: 120
 strokeFrom: 40
 strokeTo: 0
 lifetime: 45
@@ -237,7 +237,7 @@ line: true
 particles: 1
 length: 90
 cone: 0
-lenFrom: 90
+lenFrom: 120
 lenTo: 0
 strokeFrom: 12
 strokeTo: 0
@@ -258,8 +258,26 @@ colorFrom: ffdb3a
 colorTo: 66311100
 }
 ]
+spawnBullets: [
+{
+speed: 120
+lifetime: 40
+collides: false
+despawnEffect: none
+bulletInterval: 1
+intervalBullets: 2
+intervalBulletRandomSpread: 0
+intervalBulletSpread: 180
+intervalBullet: {
+type: LightningBulletType
+lightningDamage: 500
+lightningColor: ffdb3a
+lightningLength: 17
+}
+}
+]
 hitSize: 24
-pointEffectSpace: 90
+pointEffectSpace: 120
 length: 4800
 pierce: true
 shieldDamageMultiplier: 4
