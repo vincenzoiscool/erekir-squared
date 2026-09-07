@@ -20,7 +20,7 @@ soundPitchMin: 0.65
 soundPitchMax: 0.7
 category: turret
 rotateSpeed: 0.5
-range: 2400
+range: 4800
 shootCone: 0.25
 researchCostMultiplier: 0.1
 ammoTypes: {
@@ -30,25 +30,25 @@ collidesGround: false
 smokeEffect: [
 {
 type: ParticleEffect
-particles: 25
+particles: 10
 length: 120
-lifetime: 200
-sizeFrom: 30
-sizeTo: 10
+lifetime: 150
+sizeFrom: 20
+sizeTo: 5
 sizeInterp: pow2In
 color: 868bdc
-colorTo: 66666600
+colorTo: 1d214400
 }
 {
 type: ParticleEffect
-particles: 15
+particles: 5
 length: 150
-lifetime: 150
-sizeFrom: 20
-sizeTo: 7
+lifetime: 100
+sizeFrom: 12
+sizeTo: 5
 sizeInterp: pow2In
 color: 868bdc
-colorTo: 66666600
+colorTo: 1d214400
 }
 ]
 shootEffect: [
@@ -102,9 +102,9 @@ length: 1
 cone: 0
 lenFrom: 120
 lenTo: 120
-strokeFrom: 16
+strokeFrom: 20
 strokeTo: 0
-lifetime: 45
+lifetime: 60
 colorFrom: ffffff
 colorTo: 868bdc
 }
@@ -116,14 +116,14 @@ length: 1
 cone: 0
 sizeFrom: 24
 sizeTo: 40
-lifetime: 45
+lifetime: 60
 colorFrom: ffffff
 colorTo: 868bdc00
 }
 ]
-hitSize: 16
+hitSize: 20
 pointEffectSpace: 120
-length: 2400
+length: 4800
 pierce: true
 shieldDamageMultiplier: 4
 pierceArmor: true
