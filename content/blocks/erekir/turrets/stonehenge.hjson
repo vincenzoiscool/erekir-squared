@@ -90,7 +90,7 @@ parts: [
 ]
 }
 size: 7
-shake: 12
+shake: 50
 recoil: 6
 consumes: {
 power: 250
