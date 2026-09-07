@@ -104,7 +104,7 @@ lenFrom: 120
 lenTo: 120
 strokeFrom: 20
 strokeTo: 0
-lifetime: 45
+lifetime: 30
 colorFrom: ffffff
 colorTo: 868bdc
 }
@@ -211,9 +211,23 @@ length: 1
 cone: 0
 lenFrom: 120
 lenTo: 120
-strokeFrom: 24
+strokeFrom: 50
 strokeTo: 0
 lifetime: 45
+colorFrom: ffdb3a
+colorTo: 66311100
+}
+{
+type: ParticleEffect
+line: true
+particles: 1
+length: 1
+cone: 0
+lenFrom: 120
+lenTo: 120
+strokeFrom: 24
+strokeTo: 0
+lifetime: 20
 colorFrom: ffffff
 colorTo: ffdb3a
 }
