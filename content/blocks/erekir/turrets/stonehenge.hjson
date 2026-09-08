@@ -54,7 +54,7 @@ colorTo: 1d214400
 shootEffect: [
 {
 type: ParticleEffect
-region: "erekir-squared-railshock"
+region: "erekir-squared-railshock2"
 particles: 1
 length: 1
 cone: 0
@@ -110,7 +110,7 @@ colorTo: 868bdc
 }
 {
 type: ParticleEffect
-region: "erekir-squared-railshock"
+region: "erekir-squared-railshock2"
 particles: 1
 length: 1
 cone: 0
@@ -163,7 +163,7 @@ colorTo: 66311100
 shootEffect: [
 {
 type: ParticleEffect
-region: "erekir-squared-railshock"
+region: "erekir-squared-railshock2"
 particles: 1
 length: 1
 cone: 0
@@ -247,7 +247,7 @@ colorTo: ffffff
 }
 {
 type: ParticleEffect
-region: "erekir-squared-railshock"
+region: "erekir-squared-railshock2"
 particles: 1
 length: 1
 cone: 0
