@@ -271,7 +271,9 @@ intervalBulletSpread: 180
 intervalBullet: {
 type: LightningBulletType
 lightningCone: 0
-lightningDamage: 500
+lightningDamage: 2000
+despawnSound: shootSpectre
+despawnShake: 4
 lightningColor: ffdb3a
 lightningLength: 28
 }
