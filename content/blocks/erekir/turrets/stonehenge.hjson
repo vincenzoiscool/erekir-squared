@@ -256,7 +256,7 @@ bulletInterval: 1
 intervalBullets: 2
 intervalBulletRandomSpread: 0
 intervalBulletSpread: 180
-trailInterval: 1
+trailInterval: 2
 trailEffect: [
 {
 type: ParticleEffect
@@ -265,10 +265,11 @@ particles: 1
 length: 1
 cone: 0
 sizeFrom: 40
-sizeTo: 72
-lifetime: 20
+sizeTo: 90
+lifetime: 30
 colorFrom: ffdb3a
 colorTo: 66311100
+rotWithParent: true
 }
 ]
 intervalBullet: {
