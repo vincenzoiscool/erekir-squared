@@ -54,20 +54,6 @@ colorTo: 1d214400
 shootEffect: [
 {
 type: ParticleEffect
-region: "erekir-squared-railshock2"
-particles: 1
-length: 1
-cone: 0
-sizeFrom: 24
-sizeTo: 90
-lifetime: 15
-colorFrom: ffffff
-colorTo: 868bdc00
-heightFrom: 0.5
-heightTo: 0.75
-}
-{
-type: ParticleEffect
 particles: 15
 line: true
 cone: 35
@@ -121,7 +107,7 @@ sizeTo: 40
 lifetime: 20
 colorFrom: ffffff
 colorTo: 868bdc00
-heightFrom: 0.25
+heightFrom: 0
 heightTo: 0.5
 }
 ]
@@ -165,18 +151,6 @@ colorTo: 66311100
 }
 ]
 shootEffect: [
-{
-type: ParticleEffect
-region: "erekir-squared-railshock2"
-particles: 1
-length: 1
-cone: 0
-sizeFrom: 24
-sizeTo: 90
-lifetime: 15
-colorFrom: ffdb3a
-colorTo: 66311100
-}
 {
 type: ParticleEffect
 particles: 15
@@ -260,7 +234,7 @@ sizeTo: 90
 lifetime: 30
 colorFrom: ffdb3a
 colorTo: 66311100
-heightFrom: 0.25
+heightFrom: 0
 heightTo: 0.5
 }
 {
