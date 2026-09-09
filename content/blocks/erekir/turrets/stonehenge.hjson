@@ -81,15 +81,18 @@ colorFrom: ffffff
 colorTo: 868bdc
 }
 {
+type: RadialEffect
+rotationOffset: 45
+effect: {
 type: ParticleEffect
-particles: 6
+particles: 1
 line: true
-cone: 360
+cone: 0
 length: 1
 lifetime: 30
-lenFrom: 300
-lenTo: 100
-strokeFrom: 30
+lenFrom: 100
+lenTo: 300
+strokeFrom: 35
 strokeTo: 0
 colorFrom: ffffff
 colorTo: 868bdc
@@ -99,8 +102,9 @@ type: ParticleEffect
 particles: 1
 length: 0
 lifetime: 5
-sizeFrom: 5000
-sizeTo: 5000
+sizeFrom: 250
+sizeTo: 750
+colorTo: ffffff00
 }
 ]
 pointEffect: [
@@ -200,26 +204,31 @@ colorFrom: ffffff
 colorTo: ffdb3a
 }
 {
+type: RadialEffect
+rotationOffset: 45
+effect: {
 type: ParticleEffect
-particles: 6
+particles: 1
 line: true
-cone: 360
+cone: 0
 length: 1
 lifetime: 30
-lenFrom: 500
-lenTo: 100
-strokeFrom: 30
+lenFrom: 100
+lenTo: 500
+strokeFrom: 45
 strokeTo: 0
 colorFrom: ffffff
 colorTo: ffdb3a
+}
 }
 {
 type: ParticleEffect
 particles: 1
 length: 0
 lifetime: 15
-sizeFrom: 5000
-sizeTo: 5000
+sizeFrom: 250
+sizeTo: 750
+colorTo: ffffff00
 }
 ]
 pointEffect: [
