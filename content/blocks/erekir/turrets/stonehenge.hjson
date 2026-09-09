@@ -263,6 +263,7 @@ type: ParticleEffect
 region: "erekir-squared-railshock2"
 particles: 1
 length: 1
+randLength: false
 cone: 0
 sizeFrom: 40
 sizeTo: 90
