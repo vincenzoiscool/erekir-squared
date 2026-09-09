@@ -97,6 +97,7 @@ strokeTo: 0
 colorFrom: ffffff
 colorTo: 868bdc
 }
+}
 {
 type: ParticleEffect
 particles: 1
