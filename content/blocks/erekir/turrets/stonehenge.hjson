@@ -63,6 +63,8 @@ sizeTo: 90
 lifetime: 15
 colorFrom: ffffff
 colorTo: 868bdc00
+heightFrom: 0.5
+heightTo: 0.75
 }
 {
 type: ParticleEffect
@@ -119,6 +121,8 @@ sizeTo: 40
 lifetime: 20
 colorFrom: ffffff
 colorTo: 868bdc00
+heightFrom: 0.25
+heightTo: 0.5
 }
 ]
 hitSize: 20
@@ -245,6 +249,37 @@ lifetime: 60
 colorFrom: ffffff00
 colorTo: ffffff
 }
+{
+type: ParticleEffect
+region: "erekir-squared-railshock2"
+particles: 1
+length: 1
+cone: 0
+sizeFrom: 40
+sizeTo: 90
+lifetime: 30
+colorFrom: ffdb3a
+colorTo: 66311100
+heightFrom: 0.25
+heightTo: 0.5
+}
+{
+type: ParticleEffect
+line: true
+offset: 90
+particles: 1
+length: 1
+cone: 0
+lenFrom: 0
+lenTo: 200
+randLength: false
+length: -100
+strokeFrom: 32
+strokeTo: 0
+lifetime: 30
+colorFrom: ffffff
+colorTo: ffdb3a
+}
 ]
 spawnBullets: [
 {
@@ -256,23 +291,6 @@ bulletInterval: 1
 intervalBullets: 2
 intervalBulletRandomSpread: 0
 intervalBulletSpread: 180
-trailInterval: 2
-trailEffect: [
-{
-type: ParticleEffect
-region: "erekir-squared-railshock2"
-particles: 1
-length: 1
-randLength: false
-cone: 0
-sizeFrom: 40
-sizeTo: 90
-lifetime: 30
-colorFrom: ffdb3a
-colorTo: 66311100
-rotWithParent: true
-}
-]
 intervalBullet: {
 type: LightningBulletType
 lightningCone: 0
