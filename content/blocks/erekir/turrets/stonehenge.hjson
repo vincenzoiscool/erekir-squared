@@ -245,6 +245,19 @@ lifetime: 60
 colorFrom: ffffff00
 colorTo: ffffff
 }
+]
+spawnBullets: [
+{
+speed: 60
+lifetime: 80
+collides: false
+despawnEffect: none
+bulletInterval: 1
+intervalBullets: 2
+intervalBulletRandomSpread: 0
+intervalBulletSpread: 180
+trailInterval: 1
+trailEffect: [
 {
 type: ParticleEffect
 region: "erekir-squared-railshock2"
@@ -258,16 +271,6 @@ colorFrom: ffdb3a
 colorTo: 66311100
 }
 ]
-spawnBullets: [
-{
-speed: 60
-lifetime: 80
-collides: false
-despawnEffect: none
-bulletInterval: 1
-intervalBullets: 2
-intervalBulletRandomSpread: 0
-intervalBulletSpread: 180
 intervalBullet: {
 type: LightningBulletType
 lightningCone: 0
