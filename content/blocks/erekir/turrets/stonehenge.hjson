@@ -36,7 +36,7 @@ lifetime: 90
 sizeFrom: 20
 sizeTo: 5
 sizeInterp: pow2In
-color: 868bdc
+colorFrom: 868bdc
 colorTo: 1d214400
 }
 {
@@ -47,7 +47,7 @@ lifetime: 60
 sizeFrom: 12
 sizeTo: 5
 sizeInterp: pow2In
-color: 868bdc
+colorFrom: 868bdc
 colorTo: 1d214400
 }
 ]
@@ -63,7 +63,7 @@ lenFrom: 25
 lenTo: 6
 strokeFrom: 10
 strokeTo: 0
-color: ffffff
+colorFrom: ffffff
 colorTo: 868bdc
 }
 {
@@ -77,7 +77,22 @@ lenFrom: 18
 lenTo: 3
 strokeFrom: 7
 strokeTo: 0
-color: ffffff
+colorFrom: ffffff
+colorTo: 868bdc
+}
+{
+type: ParticleEffect
+particles: 6
+line: true
+cone: 360
+length: -150
+baseLength: -50
+lifetime: 30
+lenFrom: 100
+lenTo: 300
+strokeFrom: 30
+strokeTo: 0
+colorFrom: ffffff
 colorTo: 868bdc
 }
 ]
@@ -102,13 +117,11 @@ region: "erekir-squared-railshock2"
 particles: 1
 length: 1
 cone: 0
-sizeFrom: 24
+sizeFrom: 12
 sizeTo: 40
 lifetime: 20
 colorFrom: ffffff
 colorTo: 868bdc00
-heightFrom: 0
-heightTo: 0.5
 }
 ]
 hitSize: 20
@@ -135,7 +148,7 @@ lifetime: 90
 sizeFrom: 20
 sizeTo: 5
 sizeInterp: pow2In
-color: ffdb3a
+colorFrom: ffdb3a
 colorTo: 66311100
 }
 {
@@ -146,7 +159,7 @@ lifetime: 60
 sizeFrom: 12
 sizeTo: 5
 sizeInterp: pow2In
-color: ffdb3a
+colorFrom: ffdb3a
 colorTo: 66311100
 }
 ]
@@ -162,7 +175,7 @@ lenFrom: 25
 lenTo: 6
 strokeFrom: 10
 strokeTo: 0
-color: ffffff
+colorFrom: ffffff
 colorTo: ffdb3a
 }
 {
@@ -176,7 +189,22 @@ lenFrom: 18
 lenTo: 3
 strokeFrom: 7
 strokeTo: 0
-color: ffffff
+colorFrom: ffffff
+colorTo: ffdb3a
+}
+{
+type: ParticleEffect
+particles: 6
+line: true
+cone: 360
+length: -150
+baseLength: -50
+lifetime: 30
+lenFrom: 100
+lenTo: 300
+strokeFrom: 30
+strokeTo: 0
+colorFrom: ffffff
 colorTo: ffdb3a
 }
 ]
@@ -229,30 +257,11 @@ region: "erekir-squared-railshock2"
 particles: 1
 length: 1
 cone: 0
-sizeFrom: 40
+sizeFrom: 18
 sizeTo: 90
 lifetime: 30
 colorFrom: ffdb3a
 colorTo: 66311100
-heightFrom: 0
-heightTo: 0.5
-}
-{
-type: ParticleEffect
-line: true
-offset: 90
-particles: 1
-cone: 0
-lenFrom: 100
-lenTo: 250
-randLength: false
-baseLength: -50
-length: -100
-strokeFrom: 32
-strokeTo: 0
-lifetime: 50
-colorFrom: ffffff
-colorTo: ffdb3a
 }
 ]
 spawnBullets: [
