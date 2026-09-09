@@ -242,15 +242,15 @@ type: ParticleEffect
 line: true
 offset: 90
 particles: 1
-length: 1
 cone: 0
-lenFrom: 0
-lenTo: 200
+lenFrom: 100
+lenTo: 250
 randLength: false
+baseLength: -50
 length: -100
 strokeFrom: 32
 strokeTo: 0
-lifetime: 30
+lifetime: 50
 colorFrom: ffffff
 colorTo: ffdb3a
 }
