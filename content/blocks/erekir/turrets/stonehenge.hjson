@@ -90,22 +90,13 @@ line: true
 cone: 0
 length: 1
 lifetime: 30
-lenFrom: 100
+lenFrom: 200
 lenTo: 300
-strokeFrom: 35
+strokeFrom: 15
 strokeTo: 0
 colorFrom: ffffff
 colorTo: 868bdc
 }
-}
-{
-type: ParticleEffect
-particles: 1
-length: 0
-lifetime: 5
-sizeFrom: 250
-sizeTo: 750
-colorTo: ffffff00
 }
 ]
 pointEffect: [
@@ -134,6 +125,26 @@ sizeTo: 40
 lifetime: 20
 colorFrom: ffffff
 colorTo: 868bdc00
+}
+{
+type: RadialEffect 
+rotationSpacing: 180
+amount: 2
+rotationOffset : 90
+effect: {
+type: ParticleEffect
+line: true
+particles: 1
+length: 1
+cone: 0
+lenFrom: 60
+lenTo: 120
+strokeFrom: 12
+strokeTo: 0
+lifetime: 20
+colorFrom: ffffff
+colorTo: 868bdc00
+}
 }
 ]
 hitSize: 20
@@ -215,21 +226,12 @@ cone: 0
 length: 1
 lifetime: 30
 lenFrom: 100
-lenTo: 500
-strokeFrom: 45
+lenTo: 350
+strokeFrom: 15
 strokeTo: 0
 colorFrom: ffffff
 colorTo: ffdb3a
 }
-}
-{
-type: ParticleEffect
-particles: 1
-length: 0
-lifetime: 15
-sizeFrom: 250
-sizeTo: 750
-colorTo: ffffff00
 }
 ]
 pointEffect: [
@@ -286,6 +288,26 @@ sizeTo: 90
 lifetime: 30
 colorFrom: ffdb3a
 colorTo: 66311100
+}
+{
+type: RadialEffect 
+rotationSpacing: 180
+amount: 2
+rotationOffset : 90
+effect: {
+type: ParticleEffect
+line: true
+particles: 1
+length: 1
+cone: 0
+lenFrom: 60
+lenTo: 180
+strokeFrom: 12
+strokeTo: 0
+lifetime: 20
+colorFrom: ffdb3a
+colorTo: 66311100
+}
 }
 ]
 spawnBullets: [
