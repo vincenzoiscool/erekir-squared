@@ -85,11 +85,10 @@ type: ParticleEffect
 particles: 6
 line: true
 cone: 360
-length: 150
-baseLength: 50
+length: 1
 lifetime: 30
-lenFrom: 100
-lenTo: 300
+lenFrom: 300
+lenTo: 100
 strokeFrom: 30
 strokeTo: 0
 colorFrom: ffffff
@@ -100,10 +99,8 @@ type: ParticleEffect
 particles: 1
 length: 0
 lifetime: 5
-sizeFrom: 500
-sizeTo: 500
-colorFrom: ffffff
-colorTo: 000000
+sizeFrom: 5000
+sizeTo: 5000
 }
 ]
 pointEffect: [
@@ -207,11 +204,10 @@ type: ParticleEffect
 particles: 6
 line: true
 cone: 360
-length: 150
-baseLength: 50
+length: 1
 lifetime: 30
-lenFrom: 100
-lenTo: 300
+lenFrom: 500
+lenTo: 100
 strokeFrom: 30
 strokeTo: 0
 colorFrom: ffffff
@@ -221,11 +217,9 @@ colorTo: ffdb3a
 type: ParticleEffect
 particles: 1
 length: 0
-lifetime: 10
-sizeFrom: 500
-sizeTo: 500
-colorFrom: ffffff
-colorTo: 000000
+lifetime: 15
+sizeFrom: 5000
+sizeTo: 5000
 }
 ]
 pointEffect: [
