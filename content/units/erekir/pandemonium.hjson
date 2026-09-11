@@ -1,0 +1,36 @@
+name: "Pandemonium"
+description: '''
+Launches long-range EMP missiles at ground targets. Supresses enemy repair blocks. Shielded on its sides.
+'''
+flying: true
+health: 20000
+armor: 11
+rotateSpeed: 3
+envDisabled: 0
+speed: 0.9
+accel: 0.03
+wobble: false
+drag: 0.05
+accel: 0.13
+loopSound: loopHover
+controller: FlyingFollowAI
+trailLength: 15
+hitSize: 75
+weapons: [
+{
+name: pandemonium-missile
+mirror: true
+alternate: true
+x: 17.5
+y: -37.5
+top: false
+reload: 100
+shootSound: shootMissileLarge
+bullet: {
+}
+]
+range: 600
+researchCostMultiplier: 0
+research: {
+parent: disrupt
+}
