@@ -11,6 +11,7 @@ name: "Sigil"
 description: '''
 Charges up and fires a continuous beam of metal plasma. Requires an extreme amount of power, slag, and thorium fuel to maintain a high thermal output.
 '''
+outlineColor: 2d2f39
 shootY: 0
 reload: 400
 recoilTime: 30
