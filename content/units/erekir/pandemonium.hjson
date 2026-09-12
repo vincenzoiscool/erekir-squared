@@ -28,6 +28,7 @@ reload: 100
 shootSound: shootMissileLarge
 bullet: {
 }
+}
 ]
 range: 600
 researchCostMultiplier: 0
