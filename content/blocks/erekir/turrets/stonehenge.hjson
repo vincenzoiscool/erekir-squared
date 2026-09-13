@@ -14,6 +14,7 @@ Uses electromagnetic rails to fire a hypersonic metal rod at aerial targets. Has
 shoot: {
 firstShotDelay: 60
 }
+unitSort: strongest
 outlineColor: 2d2f39
 reload: 650
 recoilTime: 300
@@ -390,15 +391,19 @@ rotation: 45
 color1: feb380
 }
 ]
+liquidCapacity: 600
 }
 ammoPerShot: 25
 itemCapacity: 100
 size: 7
 shake: 50
 recoil: 10
+coolantMultiplier: 0.05
+coolant: {
+  type: ConsumeLiquid
+  liquid: water
+  amount: 5
+}
 consumes: {
 power: 250
-liquids: [
-water/10
-]
 }
