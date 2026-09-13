@@ -14,6 +14,7 @@ Uses electromagnetic rails to fire a hypersonic metal rod at aerial targets. Has
 shoot: {
 firstShotDelay: 60
 }
+chargeSound: chargeVela
 unitSort: strongest
 outlineColor: 2d2f39
 reload: 650
@@ -401,12 +402,12 @@ recoil: 10
 coolEffect: {
 type: ParticleEffect
 particles: 3
-colorFrom: ffffff
+colorFrom: ffffff50
 colorTo: 00000000
-sizeFrom: 3
-sizeTo: 6
+sizeFrom: 1
+sizeTo: 3
 length: 13
-lifetime: 30
+lifetime: 15
 }
 coolantMultiplier: 0.07
 coolant: {
