@@ -11,8 +11,10 @@ name: "Stonehenge"
 description: '''
 Uses electromagnetic rails to fire a hypersonic metal rod at aerial targets. Has practically unlimited range, but takes a long time to charge up. Breaks shields and prioritizes strongest enemies.
 '''
-reload: 400
-recoilTime: 250
+outlineColor: 2d2f39
+reload: 650
+recoilTime: 300
+cooldownTime: 400
 shootSound: railgun2
 targetGround: false
 targetBlocks: false
@@ -311,6 +313,47 @@ drawer: {
 type: DrawTurret
 basePrefix: "reinforced-"
 parts: [
+{
+type: RegionPart
+suffix: "-barrel"
+heatColor: ff0000
+progress: charge
+heatProgress: heat
+moveX: 2.75
+moveY: -2
+moves: [
+{
+progress: recoil
+x: 3.5
+y: -4
+}
+]
+}
+{
+type: RegionPart
+suffix: "-wing"
+progress: charge
+moveRot: 5
+moveX: 4
+moveY: -2
+moves: [
+{
+progress: recoil
+rot: 8
+x: 7
+y: -3
+}
+]
+}
+{
+type: FlarePart
+progress: charge
+radius: 0
+radiusTo: 35
+stroke: 4
+rotation: 45
+color1: feb380
+}
 ]
 }
 ammoPerShot: 25
