@@ -357,8 +357,8 @@ layerOffset: -0.002
 outline: false
 blending: additive
 suffix: "-rails-hot"
-color: feb380
-colorTo: ff000000
+color: ff000000
+colorTo: feb380
 progress: heat
 }
 {
