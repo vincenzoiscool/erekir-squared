@@ -398,7 +398,17 @@ itemCapacity: 100
 size: 7
 shake: 50
 recoil: 10
-coolantMultiplier: 0.05
+coolEffect: {
+type: ParticleEffect
+particles: 3
+colorFrom: ffffff
+colorTo: 00000000
+sizeFrom: 3
+sizeTo: 6
+length: 13
+lifetime: 30
+}
+coolantMultiplier: 0.07
 coolant: {
   type: ConsumeLiquid
   liquid: water
