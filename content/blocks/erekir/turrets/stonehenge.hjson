@@ -370,13 +370,13 @@ outlineLayerOffset: -0.005
 suffix: "-wing"
 mirror: true
 progress: charge
-moveRot: 5
+moveRot: -9
 moveX: 4
 moveY: -2
 moves: [
 {
 progress: recoil
-rot: 8
+rot: -18
 x: 7
 y: -3
 }
