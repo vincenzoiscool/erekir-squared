@@ -317,6 +317,7 @@ parts: [
 type: RegionPart
 suffix: "-barrel"
 heatColor: ff0000
+mirror: true
 progress: charge
 heatProgress: heat
 moveX: 2.75
@@ -332,6 +333,7 @@ y: -4
 {
 type: RegionPart
 suffix: "-wing"
+mirror: true
 progress: charge
 moveRot: 5
 moveX: 4
