@@ -341,8 +341,11 @@ layerOffset: -0.002
 outline: false
 suffix: "-rail"
 heatColor: ff0000
+color: ffffff
+colorTo: ff0000
 mirror: true
-heatProgress: charge
+heatProgress: heat
+progress: charge
 }
 {
 type: RegionPart
