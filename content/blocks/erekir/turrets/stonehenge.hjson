@@ -319,7 +319,7 @@ parts: [
 {
 type: RegionPart
 layerOffset: -0.001
-outlineLayerOffset: -0.004
+outlineLayerOffset: -0.005
 suffix: "-barrel"
 heatColor: ff0000
 mirror: true
@@ -337,20 +337,34 @@ y: -4
 }
 {
 type: RegionPart
+layerOffset: -0.003
+outline: false
+suffix: "-rails"
+}
+{
+type: RegionPart
 layerOffset: -0.002
 outline: false
-suffix: "-rail"
-heatColor: ff0000
-color: ffffff
+blending: additive
+suffix: "-rails-hot"
+color: ff000000
 colorTo: ff0000
-mirror: true
-heatProgress: heat
 progress: charge
 }
 {
 type: RegionPart
-layerOffset: -0.003
-outlineLayerOffset: -0.004
+layerOffset: -0.002
+outline: false
+blending: additive
+suffix: "-rails-hot"
+color: feb380
+colorTo: ff000000
+progress: recoil
+}
+{
+type: RegionPart
+layerOffset: -0.004
+outlineLayerOffset: -0.005
 suffix: "-wing"
 mirror: true
 progress: charge
