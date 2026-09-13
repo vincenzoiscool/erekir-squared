@@ -359,7 +359,7 @@ blending: additive
 suffix: "-rails-hot"
 color: feb380
 colorTo: ff000000
-progress: recoil
+progress: heat
 }
 {
 type: RegionPart
