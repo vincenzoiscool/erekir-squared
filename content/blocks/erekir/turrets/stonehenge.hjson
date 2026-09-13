@@ -342,6 +342,14 @@ type: RegionPart
 layerOffset: -0.003
 outline: false
 suffix: "-rails"
+progress: charge
+moveY: -2
+moves: [
+{
+progress: recoil
+y: -4
+}
+]
 }
 {
 type: RegionPart
@@ -352,6 +360,16 @@ suffix: "-rails-hot"
 color: ff000000
 colorTo: ff0000
 progress: charge
+moves: [
+{
+progress: charge
+y: -2
+}
+{
+progress: recoil
+y: -4
+}
+]
 }
 {
 type: RegionPart
@@ -362,6 +380,16 @@ suffix: "-rails-hot"
 color: ff000000
 colorTo: feb380
 progress: heat
+moves: [
+{
+progress: charge
+y: -2
+}
+{
+progress: recoil
+y: -4
+}
+]
 }
 {
 type: RegionPart
@@ -370,13 +398,13 @@ outlineLayerOffset: -0.005
 suffix: "-wing"
 mirror: true
 progress: charge
-moveRot: -9
+moveRot: 7
 moveX: 4
 moveY: -2
 moves: [
 {
 progress: recoil
-rot: -18
+rot: 14
 x: 7
 y: -3
 }
