@@ -11,6 +11,9 @@ name: "Stonehenge"
 description: '''
 Uses electromagnetic rails to fire a hypersonic metal rod at aerial targets. Has practically unlimited range, but takes a long time to charge up. Breaks shields and prioritizes strongest enemies.
 '''
+shoot: {
+firstShotDelay: 60
+}
 outlineColor: 2d2f39
 reload: 650
 recoilTime: 300
@@ -338,9 +341,8 @@ layerOffset: -0.002
 outline: false
 suffix: "-rail"
 heatColor: ff0000
-color: ff7272
 mirror: true
-heatProgress: heat
+heatProgress: charge
 }
 {
 type: RegionPart
