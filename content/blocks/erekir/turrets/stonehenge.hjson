@@ -315,6 +315,8 @@ basePrefix: "reinforced-"
 parts: [
 {
 type: RegionPart
+layerOffset: -0.001
+outlineLayerOffset: -0.004
 suffix: "-barrel"
 heatColor: ff0000
 mirror: true
@@ -332,6 +334,18 @@ y: -4
 }
 {
 type: RegionPart
+layerOffset: -0.002
+outline: false
+suffix: "-rail"
+heatColor: ff0000
+color: ff7272
+mirror: true
+heatProgress: heat
+}
+{
+type: RegionPart
+layerOffset: -0.003
+outlineLayerOffset: -0.004
 suffix: "-wing"
 mirror: true
 progress: charge
