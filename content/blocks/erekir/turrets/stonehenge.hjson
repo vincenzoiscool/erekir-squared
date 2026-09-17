@@ -323,13 +323,37 @@ type: RegionPart
 layerOffset: -0.001
 outlineLayerOffset: -0.005
 suffix: "-barrel"
-heatColor: ffd37f
+heatColor: ff0000
 mirror: true
 progress: charge
 heatProgress: heat
 moveX: 2.75
 moveY: -2
 moves: [
+{
+progress: recoil
+x: 3.5
+y: -4
+}
+]
+}
+// barrel yellow hot region
+{
+type: RegionPart
+layerOffset: 0.001
+outline: false
+blending: additive
+suffix: "-barrel-hot"
+mirror: true
+color: ff000000
+colorTo: ffd37f
+progress: heat
+moves: [
+{
+progress: charge
+x: 2.75
+y: -2
+}
 {
 progress: recoil
 x: 3.5
