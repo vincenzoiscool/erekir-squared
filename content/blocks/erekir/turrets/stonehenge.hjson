@@ -323,7 +323,7 @@ type: RegionPart
 layerOffset: -0.001
 outlineLayerOffset: -0.005
 suffix: "-barrel"
-heatColor: ff0000
+heatColor: ffd37f
 mirror: true
 progress: charge
 heatProgress: heat
@@ -351,6 +351,7 @@ y: -4
 }
 ]
 }
+// rail charge heat
 {
 type: RegionPart
 layerOffset: -0.002
@@ -371,6 +372,7 @@ y: -4
 }
 ]
 }
+// rail shoot heat
 {
 type: RegionPart
 layerOffset: -0.002
@@ -378,7 +380,7 @@ outline: false
 blending: additive
 suffix: "-rails-hot"
 color: ff000000
-colorTo: feb380
+colorTo: ffd37f
 progress: heat
 moves: [
 {
@@ -417,7 +419,7 @@ radius: 0
 radiusTo: 35
 stroke: 4
 rotation: 45
-color1: feb380
+color1: ffd37f
 }
 ]
 liquidCapacity: 600
